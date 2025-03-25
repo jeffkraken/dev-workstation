@@ -49,8 +49,8 @@ echo "[*] Setting Samba password for root..."
 
 # Step 8: Enable firewall access
 echo "[*] Configuring firewall..."
-sudo firewall-cmd --permanent --add-service=samba
-sudo firewall-cmd --reload
+firewall-cmd --permanent --add-service=samba
+firewall-cmd --reload
 
 # Step 9: Enable and start Samba services
 echo "[*] Enabling and starting Samba services..."
