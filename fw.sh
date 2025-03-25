@@ -21,4 +21,8 @@ firewall-cmd --permanent --add-port=9090/tcp
 #reload
 firewall-cmd --reload
 
+echo "!!!secret!!!" > /root/.smb_root_pass
+chmod 600 /root/.smb_root_pass
+
+
 echo "Firewall configuration complete!"
