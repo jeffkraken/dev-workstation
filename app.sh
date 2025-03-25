@@ -45,7 +45,8 @@ EOF
 
 # Step 7: Set Samba password for root
 echo "[*] Setting Samba password for root..."
-(echo "!!!secret!!!"; echo "!!!secret!!!") | smbpasswd -s -a root
+SMB_PASS=$(< /root/.smb_root_pass)
+(echo "$SMB_PASS"; echo "$SMB_PASS") | smbpasswd -s -a root
 
 # Step 8: Enable firewall access
 echo "[*] Configuring firewall..."
