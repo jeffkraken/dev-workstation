@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Variables
-FOLDER_PATH="/dev/app_share"
+FOLDER_PATH="/opt/app_share"
 SHARE_NAME="AppShare"
 
 # Step 1: Install Samba (if not already installed)
