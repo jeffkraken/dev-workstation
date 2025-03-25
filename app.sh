@@ -45,7 +45,7 @@ EOF
 
 # Step 7: Set Samba password for root
 echo "[*] Setting Samba password for root..."
-smbpasswd -a root
+(echo "!!!secret!!!"; echo "!!!secret!!!") | smbpasswd -s -a root
 
 # Step 8: Enable firewall access
 echo "[*] Configuring firewall..."
