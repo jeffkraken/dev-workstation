@@ -16,6 +16,7 @@ dnf install samba samba-client samba-common -y
 # Step 2: Create the folder
 echo "[*] Creating application folder..."
 mkdir -p "$FOLDER_PATH"
+echo "flag: U1NQMyBFbmQgb2YgQ291cnNlIExhYiBBZHZhbmNlZCBGbGFn" > "$FOLDER_PATH"/target.txt
 
 # Step 3: Set permissions (root-only access)
 echo "[*] Setting ownership and permissions..."
