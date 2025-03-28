@@ -2,6 +2,7 @@
 
 if [ "$EUID" -ne 0 ]; then
   echo "Please run as root"
+  echo "For example, run [sudo ./app.sh] but without the brackets."
   exit 1
 fi
 
