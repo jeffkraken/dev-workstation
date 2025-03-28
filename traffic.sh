@@ -3,6 +3,7 @@
 #0. Push root and check dependencies
 if [ "$EUID" -ne 0 ]; then
   echo "Please run as root"
+  echo "For example, run [sudo ./traffic.sh] but without the brackets."
   exit
 fi
 
