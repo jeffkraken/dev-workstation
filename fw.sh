@@ -2,7 +2,8 @@
 
 #requires root priviliges
 if [[ "$EUID" -ne 0 ]]; then
-  echo "This script must be run as root. Exiting."
+  echo "Please run as root"
+  echo "For example, run [sudo ./app.sh] but without the brackets."
   exit 1
 fi
 
